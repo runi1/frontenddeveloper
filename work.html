@@ -1,9 +1,21 @@
 <!doctype html >
 
+
+
 <html lang="en"> 
 	<head> 
 	<meta  charset="utf-8">
 	<meta content-type="text/html"  >
+	<!--[if lt IE 9]>
+		  <script src="script/jquery-1.11.1.js"></script>
+		  <script src="script/html5shiv.js"></script>
+		   <script src="script/respond.js"></script>
+		  <![endif] -->
+		  
+		  <!--[if gt IE 8]>
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		  <![endif] -->
+
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" >
 		<title> Pushpanjali Kumari -Font-end developer for hire </title>
 		<meta name="keyword"  content="Experienced UI Developer in bangalore, Experienced Frontend Developer in bangalore, CSS Expert,Javascript Expert,HTML Expert, User Experience, Freelancer, Freelance">
@@ -33,7 +45,13 @@
 		  rgba(185,155,85,0.2)) ;
 		   display:table ; text-align:center;
 		   }
+		   
 		   h1 { font-family:'Arizonia';color:aqua;font-size:55px; }
+		   @media only screen and (max-device-width:568px) and (min-device-width:320px) and (orientation : portrait)
+		   { h1 { font-family:'Arizonia';color:aqua;font-size:25px; } }
+		  
+		   
+		   
 		  .overlay div {margin:0 auto;}
 		  .overlay  ul li {list-style:none;padding:5px; margin-right:5px;width:39px;border-radius:0 16px;}
 		  .overlay  ul li a { color:white;}
@@ -79,7 +97,9 @@
 			<a class="navbar-brand" href="home.html"> 
 			 <img src="image/pushpa.jpg" class="img-circle" width="80px"> </img>
 			</a>
+			 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 			</div> 
+			 <div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right" id="ulNav"> 
 					<li> </li>
 					<li> <a href="work.html"> Work  </a></li>
@@ -87,7 +107,7 @@
 					<li><a href="tel:+8143317369"> <span itemprop="telephone"><i class="fa fa-phone"> </i> </span> </a></li>
 				
 				</ul>
-			
+			 </div>
 			</div>
 			</nav>
 			
