@@ -32,10 +32,7 @@
         <link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet">
 	    <style type="text/css"> 
 		 body { font-family:'lato', sans-sarif;font-size:17px; }
-		 @font-face {
-   font-family: myFirstFont;
-   src: url(sansation_light.woff);
-}
+		 
 		 .navbar-brand  img {  border:solid rgba(50,90,150,.5) }
 		 .header-work { background-image:url("image/officeDesk.jpg");height:100vh;background-position:center;background-size:cover;border-width:4px; }
 		 .customcss { position :fixed;width:100%;background-color: transparent;border-style:none;z-index: 99;
@@ -86,7 +83,15 @@
 			 .affix{ background-color:white!important; box-shadow:1px 1px 10px rgba(0,0,0,0.7);}
 			 .affix ul li a{ color:black!important;}
 			 .affix .navbar-brand img { width:38px;}
+			 
+			 @media only screen and (max-device-width: 568px) and (min-device-width: 320px) and (orientation: portrait)
+			 {
+			  .navbar-header .navbar-toggle {display:none;}
+   			 }
 		</style>
+		<script> 
+		//alert(screen.width)
+		</script>
 		
 	</head>
 	<body> 
