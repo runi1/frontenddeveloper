@@ -1,0 +1,10 @@
+ie-8 - object doesn,t support property or method called add event listner. 
+
+fix - use attachevent event
+
+IE8 and lesser versions support jQuery1X versions
+
+ie8 or lower version don't support - gradient , box shadow css3 property
+for that apply filter.
+
+vh doesn't get sopprted in lower version of ie
